@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/form_bg"
+    tools:context=".ViewTestInfoActivity">
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="193dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="56dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBPL"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewPatientId"
+        android:layout_width="193dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestId" />
+
+    <TextView
+        android:id="@+id/textViewBPH"
+        android:layout_width="193dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="56dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNurseId" />
+
+    <TextView
+        android:id="@+id/textViewBPL"
+        android:layout_width="193dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="56dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBPH" />
+
+    <TextView
+        android:id="@+id/textViewTestId"
+        android:layout_width="193dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="56dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNurseId"
+        android:layout_width="193dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="56dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPatientId" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="200dp"
+        android:text="Test ID:"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTestId"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="60dp"
+        android:text="Patient ID:"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPatientId"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="44dp"
+        android:text="Nurse ID:"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNurseId"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="52dp"
+        android:text="BPH:"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBPH"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="56dp"
+        android:text="BPL:"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBPL"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="Temperature:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTemperature"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.237" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
